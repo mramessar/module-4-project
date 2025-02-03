@@ -1,0 +1,333 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F1E5;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+}
+
+footer {
+    background-color: #14213D;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #14213D;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    color: #FFD700;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Hero */
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #14213D;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+}
+
+/* Events */
+.event {
+    background-color: #F1E0A6;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #14213D;
+    margin-bottom: 20px;
+}
+
+.event img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* About Us */
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #F1E0A6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #14213D;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* Menu */
+/* Menu Card */
+.menu-card {
+    background-color: #F1E0A6; /* Light sand background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #14213D;
+    margin-bottom: 20px;
+}
+
+/* Menu Table */
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.menu-table th,
+.menu-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.menu-table th {
+    background-color: #14213D;
+    color: #FFD700;
+    font-family: 'Cinzel', serif;
+}
+
+.menu-table td {
+    background-color: #F8F1E5;
+}
+
+.category-header {
+    background-color: #14213D;  /* Navy */
+    color: #FFD700;  /* Gold */
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Menu Items */
+.menu-table img {
+    width: 120px; /* Fixed width for consistency */
+    height: 120px; /* Fixed height for consistency */
+    object-fit: cover;  /* Ensures the images look good */
+    border-radius: 10px;
+}
+
+.image-cell {
+    position: relative;
+}
+
+.title-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+
+/* Location */
+.address {
+    background-color: #F1E0A6; /* Light sand background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.address h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #14213D;
+    margin-bottom: 15px;
+}
+
+.address p {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+iframe {
+    border-radius: 10px;
+    width: 80%;
+    height: 400px;
+}
+
+/* Contact Us */
+.contact-card {
+    background-color: #F1E0A6; /* Light sand background */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #14213D;
+    margin-bottom: 20px;
+}
+
+.contact-card label {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-card button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFD700;
+    color: #14213D;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    background-color: #ffffff;
+}
