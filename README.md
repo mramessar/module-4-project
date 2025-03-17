@@ -20,7 +20,7 @@ Welcome to the **Zeus Amphitheatre** website! This project brings history and mo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/zeus-amphitheatre.git
+   git clone https://github.com/mramessar/module-4-project
    ```
 
 2. Open `index.html` in a browser.
